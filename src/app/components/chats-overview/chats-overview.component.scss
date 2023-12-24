@@ -1,0 +1,22 @@
+$border-radius-quot: 10px;
+$searchbar-width-small: 100%;
+$searchbar-width-large: 75%;
+
+/* Define the variable for large screens */
+@media (max-width: 767px) {
+	ion-searchbar {
+		width: $searchbar-width-small;
+	}
+}
+@media (min-width: 992px) {
+	ion-searchbar {
+		width: $searchbar-width-large;
+	}
+}
+
+ion-searchbar {
+	--border-radius: #{$border-radius-quot};
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
